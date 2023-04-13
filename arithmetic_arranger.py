@@ -37,5 +37,5 @@ def arithmetic_arranger(problems, show=False):
   while i < len(problems):
     length = max(len(foperand[i]), len(soperand[i]))
     arranged_problems += (length + 2 - len(foperand[i]))*" " + foperand[i].rstrip() + "\n" + operators[i] + " " + (length - len(soperand[i]))*" " + soperand[i].rstrip() + "\n" + (length + 2)*"-" + "\n" + result[i].rstrip() 
-
+    i+=1
   return arranged_problems
